@@ -1,0 +1,19 @@
+{
+  "name": "allenwhearry",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoRest4AWhearry/allenwhearry.git"
+  },
+  "author": "Allen Whearry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoRest4AWhearry/allenwhearry/issues"
+  },
+  "homepage": "https://github.com/NoRest4AWhearry/allenwhearry#readme"
+}
