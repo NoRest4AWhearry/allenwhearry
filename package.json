@@ -4,6 +4,7 @@
   "description": "Personal Website",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d build",
     "stats": "webpack --profile --json > stats.json",
     "start": "webpack-dev-server",
     "build": "webpack"
