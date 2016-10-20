@@ -1,0 +1,27 @@
+body {background-color: #fff;}
+.navbar {margin-bottom: 0;}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #d3edf8;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: #31abde;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.jumbotron {
+	background: #31abde; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #31abde, #d3edf8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #31abde, #d3edf8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #31abde, #d3edf8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #31abde, #d3edf8); /* Standard syntax */
+}
