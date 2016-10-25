@@ -7,8 +7,11 @@ module.exports = function() {
 	jumbotron.classList.add('text-center');
 	var jumbotronHeader = document.createElement('h1');
 	var jumbotronHeader2 = document.createElement('h2');
-	var todaysDay = document.createElement('p');
+	var salesHeader = document.createElement('h2');
+	var todaysDay = document.createElement('h1');
 	jumbotronHeader.innerHTML = "Wazzup, I'm Allen Whearry Jr";
+	salesHeader.innerHTML = "...I'm pretty good at sales too!";
+	salesHeader.style.marginTop = '150px';
 	jumbotronHeader2.innerHTML = "And I build Sh*t with code :)";
 	var day;
 	switch (new Date().getDay()) {
@@ -35,18 +38,16 @@ module.exports = function() {
 	}
 	todaysDay.innerHTML = "Happy " + day + "!";
 
+
   // Create main info under jumbotron
   var container = document.createElement('div');
   container.className = 'continer';
   container.classList.add('text-center');
-  var containH1 = document.createElement('h1');
-  containH1.innerHTML = 'Hello';
-  container.appendChild(containH1);
 	
 
   //build elements
-	jumbotronElems = [jumbotronHeader, jumbotronHeader2, todaysDay];
-	containerElems = [containH1];
+	jumbotronElems = [jumbotronHeader, jumbotronHeader2, salesHeader, todaysDay];
+	containerElems = [];
 	homeElems = [jumbotron, container];
 	function build(a,elems) {
 		for (i = 0; i < elems.length; i++) {
