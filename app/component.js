@@ -41,20 +41,60 @@ module.exports = function() {
 
   // Create main info under jumbotron
   var container = document.createElement('div');
-  container.className = 'continer';
-  container.classList.add('text-center');
-	
+  container.className = 'container';
+
+  // Spelhouse Homecoming Section 
+  var shhc = document.createElement('div');
+	var shhcHeader = document.createElement('h1');
+	var shhcDescription = document.createElement('p');
+	var shhcLink = document.createElement('a');
+
+	shhcHeader.innerHTML = 'Spelhouse Homecoming 2013';
+	shhcHeader.style.borderBottom = 'solid 3px #31abde';
+	shhcHeader.style.padding = '15px';
+	shhcDescription.innerHTML = 'This site was completed for the Spelhosue Alumni ' + 
+															'After Party Committe each year from 2011 - 2013. ' +
+															'This website was in no way a ' + 
+															'representation or reflection of the official homecoming ' + 
+															'events for neither Morehouse College or Spelman College. ' + 
+															'SpelHouseHC.com was designed for the purposes of ' + 
+															'entertainment and after-parties only.';
+	shhcLink.href = 'https://norest4awhearry.github.io/SpelhouseHC/';
+	shhcLink.innerHTML = "See it here >>";
+	shhcLink.style.fontSize = '24px';
+	shhcLink.setAttribute('target', '_blank');
+
+	// The Erica K Section
+	var tek = document.createElement('div');
+	var tekHeader = document.createElement('h1');
+	var tekDescription = document.createElement('p');
+	var tekLink = document.createElement('a');
+
+	tekHeader.innerHTML = 'The Erica K';
+	tekHeader.style.borderBottom = 'solid 3px #31abde';
+	tekHeader.style.padding = '15px';
+	tekDescription.innerHTML = 'This was completed for the commercial model and brand Ambassador ' + 
+															'Erica Kecia in 2013. She was in her beginning stages of modeling ' + 
+															'required a simple yet clean design for her first website.'
+	tekLink.href = 'https://norest4awhearry.github.io/TheEricaK/';
+	tekLink.innerHTML = "See it here >>";
+	tekLink.style.fontSize = '24px';
+	tekLink.setAttribute('target', '_blank');
 
   //build elements
-	jumbotronElems = [jumbotronHeader, jumbotronHeader2, salesHeader, todaysDay];
-	containerElems = [];
-	homeElems = [jumbotron, container];
+	var jumbotronElems = [jumbotronHeader, jumbotronHeader2, salesHeader, todaysDay];
+	var shhcElems = [shhcHeader, shhcDescription, shhcLink];
+	var tekElems = [tekHeader, tekDescription, tekLink];
+	var containerElems = [shhc,tek];
+	var homeElems = [jumbotron, container];
 	function build(a,elems) {
 		for (i = 0; i < elems.length; i++) {
 			a.appendChild(elems[i]);
 		}
 	}
 	build(jumbotron,jumbotronElems);
+	build(shhc, shhcElems)
+	build(tek, tekElems);
 	build(container,containerElems);
 	build(home, homeElems);
 	// return home after eveything is built
